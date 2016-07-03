@@ -1,0 +1,231 @@
+body {
+    font-family: 'Cabin', sans-serif;
+}
+
+/***** HEADER *****/
+header {
+    height: 45px;
+    postion: fixed;
+}
+
+header h3 {
+    float:left;
+    font-family: 'Lobster Two', cursive;
+    height: 30px;
+    margin: 0px;
+    margin-top: 45px;
+}
+
+header img {
+    float: left;
+    height: 50px;
+    margin-top: 20px;
+    width: 50px;
+}
+
+nav {
+    float:right;
+  }
+
+
+nav li:hover {
+    background: #E3E0E0;
+    margin: 0px;
+    padding: 0px;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-top: 30px;
+}
+
+nav ul li a {
+    color: #6C88BD;
+    padding: 40px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+/***** SECTION *****/
+#background_image {
+    /* default background: url('https://i.ytimg.com/vi/Q7c3IA3giGE/maxresdefault.jpg'); */
+    background-image: url('img/mount.png');
+    background-size: cover;
+    margin-top: 30px;
+    height: 510px;
+    opacity: 0.75;
+}
+
+.animation-text {
+    animation-duration: 1s;
+    animation-name: slidein;
+    display: inline-block;
+    font-family: 'Lobster Two', cursive;
+    font-size: 90px;
+    margin: 0px;
+    margin-left: 20px;
+    padding: 0px;
+}
+
+@keyframes slidein {
+    from {
+      margin-left: 400px;
+    }
+    to {
+      margin-right: 0px;
+    }
+}
+
+/***** ABOUT PAGE *****/
+#self-portrait {
+    float: left;
+    margin: 20px;
+    padding-right: 15px;
+    height: 300px;
+    width: 300px;
+}
+
+#about-page {
+    background-size: cover;
+    background-image:
+    linear-gradient(
+        #8DFFD1, #74A2FF
+  );
+}
+
+.bio {
+    margin: 0px;
+    padding: 15px;
+    text-align: justify;
+}
+
+.about {
+    height: 340px;
+    margin-top: 30px;
+}
+
+.about h4 {
+    text-indent: 20px;
+    margin: 0px;
+    padding: 10px;
+    text-transform: uppercase;
+}
+
+.previous-work {
+    background-color: #74A2FF;
+    float: left;
+    height: 375px;
+    margin: 0px;
+    padding: 0px;
+    width: 850px;
+}
+
+.previous-work h4 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 20px;
+    text-transform: uppercase;
+}
+
+.previous-work ul {
+    margin-top: 0px;
+    padding-top: 0px;
+}
+
+.previous-work p {
+    margin: 0px;
+    padding: 5px;
+    text-indent: 15px;
+}
+
+.skills {
+    background-color: #74A2FF;
+    float: left;
+    height: 375px;
+    margin: 0px;
+    padding: 0px;
+    width: 414px;
+}
+
+.skills h4 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 20px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.skills ul {
+    margin-top: 0px;
+    padding-top: 0px;
+    margin-left: 120px;
+}
+
+/***** PORTFOLIO PAGE *****/
+.project {
+    height: 300px;
+    margin-top: 30px;
+    background-size: cover;
+    background-image:
+    linear-gradient(
+          #8DFFD1, #74A2FF
+    );
+}
+
+.project img {
+    float: left;
+}
+
+.project h2 {
+    margin: 0px;
+    margin-left: 310px;
+    padding: 20px;
+}
+
+.project p {
+    margin: 0px;
+    margin-left: 330px;
+    padding: 0px;
+}
+
+/***** CONTACT PAGE *****/
+.contact {
+    background-image: url('img/leaf.png');
+    background-size: cover;
+    height: 510px;
+    margin-top: 30px;
+}
+
+.contact h3 {
+    text-align: center;
+}
+
+.contact ul {
+    list-style: none;
+    text-align: center;
+    padding-right: 40px;
+}
+
+.contact ul li a {
+    text-decoration: none;
+}
+
+.email {
+    text-align: center;
+}
+
+/***** FOOTER *****/
+footer ul {
+    float: right;
+    list-style: none;
+}
+
+footer ul li {
+    display: inline-block;
+    padding-right: 30px;
+}
+
+#copyright {
+    float: left;
+    margin-top: 40px;
+}
