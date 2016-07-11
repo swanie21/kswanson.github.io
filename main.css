@@ -1,243 +1,228 @@
+/***** BASE STYLES *****/
 body {
-    font-family: 'Cabin', sans-serif;
+    font-family: "Source Sans Pro", sans-serif;
+    padding-top: 100px;
+    position: relative;
+}
+
+#hero, #about, #portfolio {
+    height: 600px;
+}
+
+#contact {
+    height: 400px;
+}
+
+/***** GRID *****/
+.full-width {
+    margin: 0 auto;
+    width: 1200px;
+}
+
+.half-width {
+    float: left;
+    width: 600px;
+}
+
+.third-width {
+    float: left;
+    width: 400px;
 }
 
 /***** HEADER *****/
 header {
-    height: 45px;
+    background-color: white;
+    height: 100px;
+    left:0;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    right: 0;
+    top:0;
+    z-index: 9999;
 }
 
 header h3 {
     background: url("img/swan.png") no-repeat;
     background-size: contain;
-    float:left;
-    font-family: 'Lobster Two', cursive;
-    font-size: 1.8em;
+    color: #04358A;
+    float: left;
+    font-family: 'Romanesco', cursive;
+    font-size: 2em;
     margin: 0px;
     margin-left: 0.5em;
-    margin-top: 40px;
-    padding-left: 1em;
+    margin-top: 0.5em;
+    max-height: 5px;
+    padding: 30px;
+    padding-left: 70px;
 }
 
 nav {
-    float:right;
-  }
+    float: right;
+}
 
+nav ul li{
+    display: inline-block;
+    margin-top: 50px;
+}
 
 nav li:hover {
     background: #E3E0E0;
+    cursor: pointer;
     margin: 0;
-    padding-top: 10px;
     padding-bottom: 10px;
-}
-
-nav ul li {
-    display: inline-block;
-    margin-top: 40px;
+    padding-top: 10px;
 }
 
 nav ul li a {
-    color: #6C88BD;
-    padding: 0 50px;
+    color: #7f7f7f;
+    font-size: 18px;
+    padding-left: 50px;
+    padding-right: 10px;
     text-decoration: none;
     text-transform: uppercase;
 }
 
-/***** HERO SECTION *****/
+/***** HERO SECTION ****/
 #hero {
-    /* default background: url('https://i.ytimg.com/vi/Q7c3IA3giGE/maxresdefault.jpg'); */
-    background-image: url('img/mount.png');
+    background: url('img/sea.png') no-repeat;
     background-size: cover;
-    margin-top: 30px;
-    height: 550px;
-    opacity: 0.75;
 }
 
-.slogan {
-    animation-duration: 1s;
-    animation-name: slidein;
-    display: inline-block;
-    font-family: 'Lobster Two', cursive;
-    font-size: 90px;
-    margin: 0px;
-    margin-top: 50px;
+#hero h2 {
+    color: #000;
+    font-family: 'Salsa', cursive;
+    font-size: 50px;
+    line-height: 60px;
     margin-left: 20px;
-    padding: 0px;
+    margin-top: 10px;
+    padding: 30px 0;
+    width: 900px;
 }
 
-@keyframes slidein {
-    from {
-      margin-left: 350px;
-    }
-    to {
-      margin-right: 0px;
-    }
+#hero h2 span {
+    font-family: 'Sonsie One', cursive;
 }
 
-/***** ABOUT PAGE *****/
-#self-portrait {
-    float: left;
-    margin: 20px;
-    padding-right: 15px;
-    height: 300px;
-    width: 300px;
+/***** ABOUT SECTION *****/
+#about .full-width {
+    padding: 50px 0;
 }
 
-#about-page {
-    background-size: cover;
-    background-image:
-    linear-gradient(
-    #8DFFD1, #74A2FF
-  );
+#about h2 {
+    font-family:'Lora', serif;
+    font-size: 36px;
 }
 
-.two-thirds-width {
-    width: 100%;
-}
-
-.bio {
-    margin: 0px;
-    padding: 15px;
-    text-align: justify;
-}
-
-.about {
-    height: 340px;
-    margin-top: 30px;
+#about p {
+    color: #7f7f7f;
+    font-size: 20px;
+    line-height: 40px;
+    padding-right: 50px;
     padding-top: 20px;
 }
 
-.about h4 {
-    text-indent: 20px;
-    margin: 0px;
-    padding: 10px;
-    text-transform: uppercase;
+#about .philosophy {
+    color: #000;
+    font-family:'Lora', serif;
 }
 
-.previous-work {
-    background-color: #74A2FF;
-    float: left;
-    height: 350px;
-    margin: 0px;
-    padding: 0px;
-    width: 75%;
+#about .previous-experience {
+    color: #000;
+    font-family:'Lora', serif;
 }
 
-.previous-work h4 {
-    margin-top: 0px;
-    margin-bottom: 0px;
-    padding: 20px;
-    text-indent: 40px;
-    text-transform: uppercase;
+#about ul li {
+    color: #7f7f7f;
+    font-size: 20px;
+    line-height: 22px;
+    padding-right: 50px;
+    padding-top: 20px;
 }
 
-.previous-work ul {
-    margin-top: 0px;
-    padding-top: 0px;
-    text-indent: 50px;
+/***** PORTFOLIO *****/
+#portfolio {
+    background-color: #EBEBEB;
+    text-align: center;
 }
 
-.previous-work p {
-    margin: 0px;
-    padding: 5px;
-    text-indent: 70px;
+#portfolio .full-width {
+    padding: 70px 0;
 }
 
-.skills {
-    background-color: #74A2FF;
-    float: left;
-    height: 350px;
-    margin: 0px;
-    padding: 0px;
-    width: 25%;
-}
-
-.skills h4 {
-    margin-top: 0px;
-    margin-bottom: 0px;
-    padding: 20px;
-    text-transform: uppercase;
-}
-
-.skills ul {
-    margin-top: 0px;
-    padding-top: 0px;
-}
-
-/***** PORTFOLIO PAGE *****/
-.project {
-    background-color: #EBF4FA;
-    border-radius: 25px;
-    height: 300px;
-    margin: auto;
-    margin-top: 30px;
-    width: 90%;
-}
-
-.project img {
-    float: left;
+#portfolio img {
     height: 200px;
-    margin-left: 50px;
-    margin-top: 50px;
+    padding-bottom: 30px;
     width: 200px;
 }
 
-.project h2 {
-    margin: 0px;
-    margin-left: 310px;
-    padding: 30px;
+#portfolio h3 {
+    font-family:'Lora', serif;
+    font-size: 24px;
+    font-style: italic;
+    font-weight: 500;
+    margin: 10px auto;
+    width: 200px;
 }
 
-.project p {
-    margin: 0px;
-    margin-left: 330px;
-    padding: 0px;
+#portfolio p {
+    color: #262a2b;
+    font-size: 18px;
+    line-height: 30px;
+    padding: 0 35px;
 }
 
-/***** CONTACT PAGE *****/
-.contact {
-    background-image: url('img/leaf.png');
-    background-size: cover;
-    height: 550px;
-    margin-top: 30px;
-    position: relative;
-}
-
-.all-contact-info {
-    left: 0;
-    margin: 0 auto;
-    position: absolute;
-    right: 0;
-    text-align: center;
-    top: 25%;
-}
-
-.contact h3 {
-    padding: 20px;
-}
-
-.contact ul li {
-    padding-top: 20px;
-}
-
-.contact ul li a {
+#portfolio a {
+    color: #04358A;
     text-decoration: none;
 }
 
-/***** FOOTER *****/
-footer ul {
-    float: right;
-    list-style: none;
+/***** CONTACT SECTION *****/
+#contact .full-width {
+    padding: 50px 0;
 }
 
-footer ul li {
-    display: inline-block;
-    margin-top: 25px;
-    padding-right: 30px;
+#self-portrait{
+    border-radius: 25px;
+    height: 300px;
+    margin-left: 80px;
+    width: 300px;
+}
+
+#email {
+    background: url("img/email.png") no-repeat;
+    background-size: contain;
+    color: #04358A;
+    font-size: 1.5em;
+    height: 60px;
+    margin-top: 20px;
+    padding-left: 1.5em;
+    text-decoration: none;
+    width: 60px;
+}
+
+#contact h2 {
+    font-family: 'Lora', serif;
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+#social-media {
+    font-family: 'Lora', serif;
+    font-size: 29px;
+    margin-top: 40px
+}
+
+#contact ul li {
+     display: inline-block;
+     margin-top: 40px
+}
+
+#contact ul img {
+    padding-right: 58px;
 }
 
 #copyright {
     float: left;
     margin-left: 10px;
-    margin-top: 50px;
 }
