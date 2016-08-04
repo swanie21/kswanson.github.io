@@ -3,101 +3,102 @@
   <head>
     <meta charset="UTF-8">
       <title>Kirsten Swanson | Web Developer"</title>
-      <link rel="stylesheet" type="text/css" href="reset.css">
-      <link href="https://fonts.googleapis.com/css?family=Romanesco" rel="stylesheet">
+      <link rel="stylesheet" href="css/reset.css" type="text/css">
       <link href="https://fonts.googleapis.com/css?family=Salsa" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css?family=Sonsie+One" rel="stylesheet">
       <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700' rel='stylesheet'>
       <link href='https://fonts.googleapis.com/css?family=Lora:400,700' rel='stylesheet'>
-      <link rel="stylesheet" type="text/css" href="main.css">
+      <link rel="stylesheet" href="css/main.css" type="text/css">
+      <link rel="stylesheet" href="css/animation.css" type="text/css">
+      <link rel="stylesheet" href="css/media-queries.css" type="text/css">
+      <meta name="viewport" content="width=device-width">
   </head>
   <body>
+    <section id="hero">
+    <section class="intro">
+      <h2><span>Who am I?</span>
+        <div class="rotating-words">
+          <span>Kirsten Swanson</span>
+          <span>A Creator</span>
+          <span>A thinker</span>
+          <span>An Experimenter</span>
+        </div>
+      </h2>
+      <h2>
+        I'm a Web Developer who combines the art of design with the art of programming.
+      </h2>
+    </section>
     <header>
-      <h3>Kirsten Swanson</h3>
-        <nav>
-          <ul>
-            <li><a href="#hero">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </nav>
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact" id="connect">Contact</a></li>
+        </ul>
+      </nav>
+      <article class="contact-information">
+        <ul>
+          <li><a href="https://www.linkedin.com/in/kirsten-swanson-10642671" target="_blank"><img src="img/linkedin.png" alt="Linkedin icon" /></a></li>
+          <li><a href="https://github.com/swanie21" target="_blank"><img src="img/github.png" alt="Github icon" /></a></li>
+          <li><a href="https://twitter.com/kswanie21" target="_blank"><img src="img/twitter.png" alt="Twitter icon" /></a></li>
+          <li><a href="mailto:kswanie21@gmail.com"><img src="img/email.png" alt="email-envelope" /></a></li>
+          <li><a href="https://medium.com/@kswanie21" target="_blank"><img src="img/medium-blog.png" alt="Medium blog icon" /></a></li>
+        </ul>
+      <article>
     </header>
-      <section id="hero">
-        <h2>
-          <span>Who am I? </span>
-            I'm a Web Developer who combines the art of design with the art of programming.
-        </h2>
-      </section>
-      <section id="about">
-      <div class="full-width">
-        <div class="half-width">
-          <h2>Let me introduce myself</h2>
-            <p>Hi, I'm Kirsten! I am an adventurous, risk-taker who seeks a creative challenge. My journey into the ever-changing tech world started with my passion to use my creativity in a versatile yet impactful way. It was actually through my neighbors that compelled me to pursue this path and to switch careers. My goal is to create memorable and functional user interfaces that are accessible to everyone.
-            </p>
-            <p class="philosophy">My philosophies on life:
-            </p>
-            <p>Enjoy life &mdash; Dream big &mdash; Create long-lasting relationships &mdash; Never stop learning &mdash; Make mistakes &mdash; Travel &mdash; Experiment
-            </p>
-        </div>
-        <div class="half-width">
-          <h2>Credentials</h2>
-            <p>I'm a graduate of the W.P. Carey School of Business at Arizona State University. I graduated early with a B.S. in Marketing with an International Business Certificate. I furthered my education with a TESOL certificate and an ARIES fundamental course.
-            </p>
-            <p class="previous-experience">Professional Experience:
-            </p>
-              <ul>
-                <li>Junior Front-End Web Developer</li>
-                <li>Engineering Technician</li>
-                <li>ESL Instructor</li>
-                <li>Hotel Front-Desk Agent</li>
-                <li>Interactive Project Manager Intern</li>
-              </ul>
-        </div>
-        </div>
-        </section>
-        <section id="portfolio">
-          <div class="full-width">
-            <div class="third-width">
-              <img src="img/number-guesser.png" alt="number guesser game picture" />
-                <h3>Number Guesser</h3>
-                  <p>Created a number guessing game where the user can guess the number between 1 and 100 or the user can create their own interval range to guess from</p>
-                  <p>Tools: Javascript | HTML | CSS</p>
-                  <p><a href="https://github.com/swanie21/number-guesser" target="_blank">Link to game</a></p>
-            </div>
-            <div class="third-width">
-              <img src="img/html.png" alt="HTML icon" />
-                <h3>Project Name</h3>
-                  <p>Project Description</p>
-                  <p>Tools used on the project</p>
-                  <p>Github link</p>
-            </div>
-            <div class="third-width">
-              <img src="img/css.png" alt="CSS icon" />
-                <h3>Project Name</h3>
-                  <p>Project Description</p>
-                  <p>Tools used on the project</p>
-                  <p>Github link</p>
-            </div>
-          </div>
-        </section>
-      <footer id="contact">
-        <div class="full-width">
-          <div class="half-width">
-            <img src="img/self-portrait.png" id="self-portrait" alt="self portrait" />
-          </div>
-          <div class="half-width" id="contact-info">
-            <h2>Let's connect</h2>
-            <a href="mailto:kswanie21@gmail.com" id="email">kswanie21@gmail.com</a>
-            <h3 id="social-media">Follow me at</h3>
-              <ul>
-                <li><a href="https://www.linkedin.com/in/kirsten-swanson-10642671" target="_blank"><img src="img/linkedin.png" alt="Linkedin icon" /></a></li>
-                <li><a href="https://github.com/swanie21" target="_blank"><img src="img/github.png" alt="Github icon" /></a></li>
-                <li><a href="https://twitter.com/kswanie21" target="_blank"><img src="img/twitter.png" alt="Twitter icon" /></a></li>
-              </ul>
-          </div>
-        </div>
-      </footer>
+    </section>
+    <section id="about">
+      <div class="about-half">
+        <h2>Let me introduce myself</h2>
+          <p>Hi, I'm Kirsten! I am an adventurous, risk-taker who seeks a creative challenge. My journey into the ever-changing tech world started with my passion to use my creativity in a versatile yet impactful way. It was actually through my neighbors that programming was introduced to me. They inspired me to pursue this path and to switch careers. My goal is to create memorable and functional user interfaces that are accessible to everyone.
+          </p>
+          <p class="philosophy">My philosophies on life:
+          </p>
+          <p>Enjoy life &mdash; Dream big &mdash; Create long-lasting relationships &mdash; Never stop learning &mdash; Make mistakes &mdash; Travel &mdash; Experiment
+          </p>
+      </div>
+      <div class="about-half">
+        <h2>Credentials</h2>
+          <p>I'm a graduate of the W.P. Carey School of Business at Arizona State University. I graduated early with a B.S. in Marketing and an International Business Certificate. I furthered my education with a TESOL certificate and an ARIES fundamental course.
+          </p>
+          <p class="previous-experience">Professional Experience:
+          </p>
+            <ul>
+              <li>Junior Front-End Web Developer</li>
+              <li>Engineering Technician</li>
+              <li>ESL Instructor</li>
+              <li>Hotel Front-Desk Agent</li>
+              <li>Interactive Project Manager Intern</li>
+            </ul>
+      </div>
+    </section>
+    <section id="portfolio">
+      <div class="individual-project">
+        <img src="img/number-guesser.png" alt="number guesser website picture" />
+        <h3>Number Guesser</h3>
+        <p>Created a number guessing game where the user can guess the random number between 1 and 100 or the user can create their own interval range to guess from</p>
+        <p>Tools: Javascript | HTML | CSS</p>
+        <p><a href="https://swanie21.github.io/number-guesser/" target="_blank">Link to game</a></p>
+      </div>
+      <div class="individual-project">
+        <img src="img/favorite-bookmarks.png" alt="favorite bookmarks website picture" />
+        <h3>Favorite Bookmarks</h3>
+        <p>The user can bookmark their favorite website by inputting the website's title and URL address. The bookmark will appear on the page and can be marked as read or deleted.</p>
+        <p>Tools: jQuery | HTML | CSS</p>
+        <p><a href="https://swanie21.github.io/favorite-bookmarks/" target="_blank">Link to Favorite Bookmarks</a></p>
+      </div>
+      <div class="individual-project">
+        <img src="img/idea-box.png" alt="ideabox website picture" />
+        <h3>Ideabox</h3>
+        <p>An application that allows the user to record and archive their ideas locally on their computer. The user can rank ideas, sort ideas by rank and delete their ideas from the page.</p>
+        <p>Tools: jQuery | localStorage | HTML | CSS</p>
+        <p><a href="https://jeff-duke.github.io/idea-box/" target="_blank">Link to Ideabox</a></p>
+      </div>
+    </section>
+    <footer>
     <p id="copyright">Copyright &copy; 2016 KSwans</p>
+    </footer>
+    <script src="scripts/jquery.js" charset="utf-8"></script>
+    <script src="scripts/script.js" charset="utf-8"></script>
   </body>
 </html>
