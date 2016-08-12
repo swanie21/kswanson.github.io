@@ -8,7 +8,7 @@ function hideContactInfo() {
 
 $('#connect').hover(function() {
   showContactInfo();
-})
+});
 
 $('.contact-information').on('mouseleave', function() {
   hideContactInfo();

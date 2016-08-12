@@ -1,4 +1,4 @@
-@media screen and (max-width: 1190px) {
+@media screen and (max-width: 1130px) {
   #hero {
     display: flex;
     width: 100%;
@@ -10,18 +10,37 @@
 
   .rotating-words {
     display: block;
-    width: 300px;
+    text-indent: 0;
+    width: 100%;
+  }
+
+  header {
+    display: none;
   }
 
   #about {
     display: flex;
     flex-direction: column;
-    width: 95%;
+    width: 100%;
     height: 100%;
+  }
+
+  .first-about-section, .second-about-section {
+    width: 90%;
+  }
+
+  .second-about-section {
+    padding-top: 0;
+  }
+
+  #about p {
+    font-size: 1.2em;
+    padding-right: 0;
   }
 
   #about ul li {
     display: inline;
+    font-size: 1.2em;
     line-height: 1.5em;
     padding-right: 15px;
   }
@@ -43,7 +62,11 @@
     display: flex;
   }
 
-  nav ul {
+  #hero h2 {
+    font-size: 1.9em;
+  }
+
+  .rotating-words span{
     width: 100%;
   }
 
@@ -51,55 +74,37 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 100%;
   }
 
-  .about-half {
-    width: 80%;
-    padding: 15px;
+  .first-about-section, .second-about-section {
+    padding-left: 20px;
+    width: 90%;
   }
 
   #about h2 {
-    font-size: 28px;
+    font-size: 1.5em;
+  }
+
+  #about p {
+    padding-right: 5px;
   }
 
   #about ul li {
     display: block;
-    line-height: 1em;
+    line-height: 0.7em;
   }
 
   #portfolio {
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 100%;
   }
 
   .individual-project {
-    display: flex;
-    flex-direction: column;
     padding: 20px 0;
     width: 100%;
   }
 
-  #portfolio p {
-    width: 80%;
-  }
-
-  #contact {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    width: 100%;
-  }
-
-  .contact-half {
-    align-items: center;
-    display: flex;
-  }
-
-  #self-portrait{
-    border-radius: 25px;
-    height: 200px;
-    width: 200px;
+  .contact-information-footer ul li {
+    padding-right: 20px;
   }
