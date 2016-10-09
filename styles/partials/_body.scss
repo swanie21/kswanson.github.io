@@ -1,0 +1,13 @@
+body {
+  background: url('../img/sea.png') no-repeat fixed;
+  background-size: cover;
+  overflow-x: hidden;
+}
+
+#copyright {
+  background-color: $color-off-white;
+  float: left;
+  font-family: $font-source-sans-pro;
+  padding: 0 0 10px 10px;
+  width: 100%;
+}

@@ -1,33 +1,12 @@
 <!DOCTYPE html>
 <html lang="en-US">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width">
-    <title>Kirsten Swanson | Web Developer"</title>
-    <link rel="stylesheet" href="css/reset.css" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Salsa" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Sonsie+One" rel="stylesheet">
-    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700' rel='stylesheet'>
-    <link href='https://fonts.googleapis.com/css?family=Lora:400,700' rel='stylesheet'>
-    <link rel="stylesheet" href="css/main.css" type="text/css">
-    <link rel="stylesheet" href="css/animation.css" type="text/css">
-    <link rel="stylesheet" href="css/media-queries.css" type="text/css">
+    <meta charset="utf-8">
+    <title>Kirsten Swanson | Web Developer</title>
+    <link rel="stylesheet" href="styles/main.css" type="text/css">
   </head>
+
   <body>
-    <section id="hero">
-    <section class="intro">
-      <h2><span>Who am I?</span>
-        <div class="rotating-words">
-          <span>Kirsten Swanson</span>
-          <span>A Creator</span>
-          <span>A thinker</span>
-          <span>An Experimenter</span>
-        </div>
-      </h2>
-      <h2>
-        I'm a Web Developer who combines the art of design with the art of programming.
-      </h2>
-    </section>
     <header>
       <nav>
         <ul>
@@ -36,16 +15,61 @@
           <li><a href="#contact" id="connect">Contact</a></li>
         </ul>
       </nav>
-      <article class="contact-information">
-        <ul>
-          <li><a href="https://www.linkedin.com/in/kirsten-swanson-10642671" target="_blank"><img src="img/linkedin.png" alt="Linkedin icon" /></a></li>
-          <li><a href="https://github.com/swanie21" target="_blank"><img src="img/github.png" alt="Github icon" /></a></li>
-          <li><a href="https://twitter.com/kswanie21" target="_blank"><img src="img/twitter.png" alt="Twitter icon" /></a></li>
-          <li><a href="mailto:kswanie21@gmail.com"><img src="img/email.png" alt="email-envelope" /></a></li>
-          <li><a href="https://medium.com/@kswanie21" target="_blank"><img src="img/medium-blog.png" alt="Medium blog icon" /></a></li>
-        </ul>
-      <article>
     </header>
+
+    <article id="hidden-contact-information">
+      <ul class="contact-icons">
+        <li>
+          <a href="https://www.linkedin.com/in/kirsten-swanson-10642671" target="_blank">
+          <img src="img/linkedin.svg" alt="Linkedin icon" /></a>
+        </li>
+        <li>
+          <a href="https://github.com/swanie21" target="_blank">
+          <img src="img/github.svg" alt="Github icon" /></a>
+        </li>
+        <li>
+          <a href="https://twitter.com/kswanie21" target="_blank">
+          <img src="img/twitter.svg" alt="Twitter icon" /></a>
+        </li>
+        <li>
+          <a href="mailto:kswanie21@gmail.com">
+          <img src="img/email.svg" alt="email-envelope" /></a>
+        </li>
+      </ul>
+    </article>
+
+    <section id="introduction">
+      <h1>Who am I?
+        <div class="rotating-words">
+          <span>Kirsten Swanson</span>
+          <span>A Front-End Developer</span>
+          <span>A Creator</span>
+          <span>An Adventurer</span>
+        </div>
+      </h1>
+    </section>
+
+    <section id="portfolio">
+      <div class="individual-project">
+        <img src="img/content-card-example.png" alt="style guide example" />
+        <h3><a href="https://github.com/swanie21/style-guides" target="_blank">Style Guides</a></h3>
+        <p>Created style guides for a navigation bar, a footer, an accordion tab, and content cards. Each element includes media queries for responsive design.</p>
+        <p class="project-tools">Tools: HTML | SASS | jQuery</p>
+      </div>
+      <div class="individual-project">
+        <img src="img/pomodoro-app.png" alt="pomodoro timer with palm tree image" />
+        <h3><a href="https://github.com/Peter-Springer/pomodoro-app" target="_blank">Pomodoro Application</a></h3>
+        <p>A pomodoro timer that has a default start time of 25 minutes with a 5 minute break time. The user can increase or decrease both the session length and break length. A sound will alert the user when the session and break are over.</p>
+        <p class="project-tools">Tools: HTML | SASS | JS | ES6</p>
+      </div>
+      <div class="individual-project">
+        <img src="img/react-chat-app.png" alt="chat app mobile view" />
+        <h3><a href="https://github.com/swanie21/shoot-the-breeze" target="_blank">Chat Application</a></h3>
+        <p>An application that allows the user to login to Firebase and have their messages stored in it. Other users can login as well to chat and the messages will be saved based on the user's name and email.</p>
+        <p class="project-tools">Tools: HTML | SASS | React | Firebase</p>
+      </div>
+    </section>
+
     </section>
     <section id="about">
       <div class="first-about-section">
@@ -71,39 +95,33 @@
             </ul>
       </div>
     </section>
-    <section id="portfolio">
-      <div class="individual-project">
-        <img src="img/number-guesser.png" alt="number guesser website picture" />
-        <h3>Number Guesser</h3>
-        <p>Created a number guessing game where the user can guess the random number between 1 and 100 or the user can create their own interval range to guess from.</p>
-        <p>Tools: Javascript | HTML | CSS</p>
-        <p><a href="https://swanie21.github.io/number-guesser/" target="_blank">Link to game</a></p>
-      </div>
-      <div class="individual-project">
-        <img src="img/favorite-bookmarks.png" alt="favorite bookmarks website picture" />
-        <h3>Favorite Bookmarks</h3>
-        <p>The user can bookmark their favorite website by inputting the website's title and URL address. The bookmark will appear on the page and can be marked as read or deleted.</p>
-        <p>Tools: jQuery | HTML | CSS</p>
-        <p><a href="https://swanie21.github.io/favorite-bookmarks/" target="_blank">Link to Favorite Bookmarks</a></p>
-      </div>
-      <div class="individual-project">
-        <img src="img/idea-box.png" alt="ideabox website picture" />
-        <h3>Ideabox</h3>
-        <p>An application that allows the user to record and archive their ideas locally on their computer. The user can rank ideas, sort ideas by rank and delete their ideas from the page.</p>
-        <p>Tools: jQuery | localStorage | HTML | CSS</p>
-        <p><a href="https://jeff-duke.github.io/idea-box/" target="_blank">Link to Ideabox</a></p>
-      </div>
-    </section>
-    <footer class="contact-information-footer">
-        <ul>
-          <li><a href="https://www.linkedin.com/in/kirsten-swanson-10642671" target="_blank"><img src="img/linkedin.png" alt="Linkedin icon" /></a></li>
-          <li><a href="https://github.com/swanie21" target="_blank"><img src="img/github.png" alt="Github icon" /></a></li>
-          <li><a href="https://twitter.com/kswanie21" target="_blank"><img src="img/twitter.png" alt="Twitter icon" /></a></li>
-          <li><a href="mailto:kswanie21@gmail.com"><img src="img/email.png" alt="email-envelope" /></a></li>
-          <li><a href="https://medium.com/@kswanie21" target="_blank"><img src="img/medium-blog.png" alt="Medium blog icon" /></a></li>
-        </ul>
+
+    <footer>
+      <ul>
+        <li>
+          <a class="icon" href="https://www.linkedin.com/in/kirsten-swanson-10642671" target="_blank">
+          <img src="img/linkedin.svg" alt="Linkedin icon" /></a>
+        </li>
+        <li>
+          <a href="https://github.com/swanie21" target="_blank">
+          <img src="img/github.svg" alt="Github icon" /></a>
+        </li>
+        <li>
+          <a href="https://twitter.com/kswanie21" target="_blank">
+          <img src="img/twitter.svg" alt="Twitter icon" /></a>
+        </li>
+        <li>
+          <a href="mailto:kswanie21@gmail.com">
+          <img src="img/email-two.svg" alt="email-envelope" /></a>
+        </li>
+        <li>
+          <a href="https://medium.com/@kswanie21" target="_blank">
+          <img src="img/medium-blog.svg" alt="Medium blog icon" /></a>
+        </li>
+      </ul>
     </footer>
     <p id="copyright">Copyright &copy; 2016 KSwans</p>
+
     <script src="scripts/jquery.js"></script>
     <script src="scripts/script.js"></script>
   </body>

@@ -1,0 +1,42 @@
+#about {
+  background-color: #f2f7fa;
+  display: flex;
+  width: 100%;
+}
+
+.first-about-section, .second-about-section {
+  display: flex;
+  flex-direction: column;
+  padding: 50px 0;
+  padding-left: 40px;
+  width: 50%;
+}
+
+#about h2 {
+  font-family: $font-lora;
+  font-size: 36px;
+}
+
+#about p {
+  color: $color-gray-dark;
+  font-family: $font-source-sans-pro;
+  font-size: 20px;
+  line-height: 40px;
+  padding-right: 50px;
+  padding-top: 20px;
+}
+
+#about {
+  .philosophy, .previous-experience {
+    color: $color-black-lightened;
+    font-family: $font-lora;
+  }
+}
+
+#about ul li {
+  color: $color-gray-dark;
+  font-family: $font-source-sans-pro;
+  font-size: 20px;
+  line-height: 22px;
+  padding: 20px 50px 0 0;
+}

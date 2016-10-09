@@ -1,16 +1,25 @@
-/**** HEADER ANIMATION *****/
-.intro {
-    position: relative;
-    width: 70%;
+#introduction {
+  display: flex;
+  height: 640px;
+  width: 100vw;
+  margin-top: -15em;
+  padding-left: 2em;
+  position: relative;
+}
+
+h1 {
+  color: $color-black-lightened;
+  font: {
+    family: $font-salsa;
+    size: 2.8em;
+  }
+  margin: 0 9em 15em 0;
 }
 
 .rotating-words {
   display: inline-block;
-  font-family: 'Sonsie One', serif;
-  font-size: 0.7em;
-	text-indent: 8px;
-  margin: 0;
-  padding-bottom: 40px;
+	text-indent: 6px;
+  vertical-align: top;
 }
 
 .rotating-words span {

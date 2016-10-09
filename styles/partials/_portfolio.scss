@@ -1,0 +1,50 @@
+#portfolio {
+  background-color: $color-off-white;
+  display: flex;
+  height: 700px;
+  width: 100%;
+}
+
+.individual-project {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding: 60px 0 0 0;
+  width: 33%;
+}
+
+#portfolio {
+  img {
+    height: 300px;
+    padding-bottom: 20px;
+    width: 300px;
+  }
+  h3 {
+    color: $color-black-lightened;
+    font: {
+      family:'Lora', serif;
+      size: 24px;
+      weight: 700;
+    }
+    margin: 10px auto;
+  }
+  p {
+    color: $color-gray-dark;
+    font-family: $font-source-sans-pro;
+    font-size: 18px;
+    line-height: 30px;
+    width: 320px;
+  }
+  a {
+    color: $color-black-lightened;
+    text-decoration: none;
+    &:hover {
+      color: $color-blue-dark;
+      font-weight: bold;
+    }
+  }
+}
+
+.project-tools {
+  padding-top: 10px;
+}

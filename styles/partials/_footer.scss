@@ -1,0 +1,19 @@
+footer {
+  background-color: $color-off-white;
+  height: 75px;
+  width: 100%;
+}
+
+footer ul {
+  padding-top: 20px;
+  text-align: center;
+}
+
+footer ul li {
+  display: inline-block;
+  padding: 0 15px 0 15px;
+}
+
+img:hover {
+  transform: scale(1.1);
+}

@@ -1,15 +1,11 @@
-function showContactInfo() {
-  $('.contact-information').show();
-}
+'use strict';
 
 function hideContactInfo() {
-  $('.contact-information').hide();
+  $('.contact-icons').hide();
 }
 
-$('#connect').hover(function() {
-  showContactInfo();
+$('#connect').click(function() {
+  $('.contact-icons').toggle();
 });
 
-$('.contact-information').on('mouseleave', function() {
-  hideContactInfo();
-});
+hideContactInfo();
