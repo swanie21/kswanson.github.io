@@ -1,13 +1,14 @@
 #about {
   background-color: #f2f7fa;
   display: flex;
+  height: 700px;
   width: 100%;
 }
 
 .first-about-section, .second-about-section {
   display: flex;
   flex-direction: column;
-  padding: 50px 0;
+  padding: 100px 0;
   padding-left: 40px;
   width: 50%;
 }

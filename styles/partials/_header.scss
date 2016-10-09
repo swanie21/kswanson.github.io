@@ -8,7 +8,7 @@ nav {
       font-family: $font-source-sans-pro;
       margin-right: 3em;
       a {
-        color: lighten($color-blue-dark, 30%);
+        color: darken($color-blue-dark, 20%);
         font-size: 1.5em;
         font-weight: bold;
         padding: 0.3em;
@@ -27,8 +27,10 @@ nav a:hover {
 
 #hidden-contact-information {
   height: 260px;
-  margin-right: 4.3em;
+  margin-right: 4.7em;
   text-align: right;
+  position: relative;
+  z-index: 1;
   ul li {
     padding-top: 1em;
   }

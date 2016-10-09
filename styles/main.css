@@ -54,7 +54,7 @@ nav ul li {
   font-family: "Source Sans Pro", sans-serif;
   margin-right: 3em; }
 nav ul li a {
-  color: #4e8af6;
+  color: #031942;
   font-size: 1.5em;
   font-weight: bold;
   padding: 0.3em;
@@ -68,8 +68,10 @@ nav a:hover {
 
 #hidden-contact-information {
   height: 260px;
-  margin-right: 4.3em;
-  text-align: right; }
+  margin-right: 4.7em;
+  text-align: right;
+  position: relative;
+  z-index: 1; }
 #hidden-contact-information ul li {
   padding-top: 1em; }
 
@@ -214,12 +216,13 @@ h1 {
 #about {
   background-color: #f2f7fa;
   display: flex;
+  height: 700px;
   width: 100%; }
 
 .first-about-section, .second-about-section {
   display: flex;
   flex-direction: column;
-  padding: 50px 0;
+  padding: 100px 0;
   padding-left: 40px;
   width: 50%; }
 
