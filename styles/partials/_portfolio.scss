@@ -1,7 +1,7 @@
 #portfolio {
   background-color: $color-off-white;
   display: flex;
-  height: 700px;
+  justify-content: space-between;
   width: 100%;
 }
 
@@ -9,8 +9,8 @@
   align-items: center;
   display: flex;
   flex-direction: column;
-  padding: 60px 0 0 0;
-  width: 33%;
+  padding: 60px 30px 60px 30px;
+  width: 350px;
 }
 
 #portfolio {
@@ -47,4 +47,21 @@
 
 .project-tools {
   padding-top: 10px;
+}
+
+@media screen and (max-width: $break-point-medium) {
+  #portfolio {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .individual-project {
+    padding: 20px 0 20px 0;
+  }
+}
+
+@media screen and (max-width: $break-point-small) {
+  #portfolio p {
+    font-size: 16px;
+    text-align: center;
+  }
 }

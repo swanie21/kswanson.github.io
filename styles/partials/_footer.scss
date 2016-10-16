@@ -1,6 +1,6 @@
 footer {
   background-color: $color-off-white;
-  height: 75px;
+  height: 100px;
   width: 100%;
 }
 
@@ -16,4 +16,10 @@ footer ul li {
 
 img:hover {
   transform: scale(1.1);
+}
+
+@media screen and (max-width: $break-point-small) {
+  footer ul li {
+    padding: 0 3px 0 3px;
+  }
 }

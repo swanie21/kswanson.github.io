@@ -35,3 +35,13 @@ nav a:hover {
     padding-top: 1em;
   }
 }
+
+@media screen and (max-width: $break-point-medium) {
+  header {
+    height: 48px;
+  }
+
+  nav {
+    display: none;
+  }
+}

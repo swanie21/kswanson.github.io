@@ -1,0 +1,23 @@
+@mixin animation-rotation {
+  animation: topToBottom 12.5s linear infinite 0s;
+  -ms-animation: topToBottom 12.5s linear infinite 0s;
+  -webkit-animation: topToBottom 12.5s linear infinite 0s;
+}
+
+@mixin animation-timing-2s {
+  animation-delay: 2.5s;
+  -ms-animation-delay: 2.5s;
+  -webkit-animation-delay: 2.5s;
+}
+
+@mixin animation-timing-5s {
+  animation-delay: 5s;
+  -ms-animation-delay: 5s;
+  -webkit-animation-delay: 5s;
+}
+
+@mixin animation-timing-7s {
+  animation-delay: 7.5s;
+  -ms-animation-delay: 7.5s;
+  -webkit-animation-delay: 7.5s;
+}

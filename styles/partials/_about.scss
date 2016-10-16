@@ -1,16 +1,18 @@
 #about {
   background-color: #f2f7fa;
   display: flex;
-  height: 700px;
   width: 100%;
 }
 
 .first-about-section, .second-about-section {
   display: flex;
   flex-direction: column;
-  padding: 100px 0;
-  padding-left: 40px;
+  padding: 60px 0 60px 40px;
   width: 50%;
+}
+
+.hidden-about-section {
+  display: none;
 }
 
 #about h2 {
@@ -23,21 +25,61 @@
   font-family: $font-source-sans-pro;
   font-size: 20px;
   line-height: 40px;
-  padding-right: 50px;
-  padding-top: 20px;
+  padding: 20px 50px 0 0;
 }
 
 #about {
-  .philosophy, .previous-experience {
+  .philosophy, .skills {
     color: $color-black-lightened;
     font-family: $font-lora;
   }
 }
 
-#about ul li {
-  color: $color-gray-dark;
-  font-family: $font-source-sans-pro;
-  font-size: 20px;
-  line-height: 22px;
-  padding: 20px 50px 0 0;
+@media screen and (max-width: $break-point-medium) {
+  #about {
+    flex-wrap: wrap;
+  }
+
+  .first-about-section, .second-about-section {
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .first-about-section {
+    padding-bottom: 30px;
+  }
+
+  .second-about-section {
+    padding-top: 0;
+  }
+}
+
+@media screen and (max-width: 840px) {
+  .first-about-section, .second-about-section {
+    display: none;
+  }
+
+  .hidden-about-section {
+    display: block;
+    padding: 20px;
+  }
+}
+
+@media screen and (max-width: $break-point-small) {
+  .hidden-about-section {
+    padding: 10px;
+  }
+
+  #about .intro-about-title, #about .hidden-skills {
+    font-size: 26px;
+    padding-top: 20px;
+    text-align: center;
+  }
+
+  #about p {
+    font-size: 16px;
+    line-height: 30px;
+    padding-left: 20px;
+  }
 }
