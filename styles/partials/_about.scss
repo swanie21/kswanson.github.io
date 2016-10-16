@@ -71,10 +71,12 @@
     padding: 10px;
   }
 
-  #about .intro-about-title, #about .hidden-skills {
+  #about {
+    .intro-about-title, .hidden-skills {
     font-size: 26px;
     padding-top: 20px;
     text-align: center;
+    }
   }
 
   #about p {

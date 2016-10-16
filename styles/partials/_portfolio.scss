@@ -38,10 +38,6 @@
   a {
     color: $color-black-lightened;
     text-decoration: none;
-    &:hover {
-      color: $color-blue-dark;
-      font-weight: bold;
-    }
   }
 }
 
@@ -54,6 +50,7 @@
     flex-wrap: wrap;
     justify-content: center;
   }
+
   .individual-project {
     padding: 20px 0 20px 0;
   }
