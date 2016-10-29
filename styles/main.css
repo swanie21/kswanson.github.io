@@ -205,10 +205,11 @@ nav a:hover {
 
 h1 {
   color: #020203;
-  font-family: "Salsa", serif;
+  font-family: "Lora", serif;
   font-size: 2.8em;
-  margin-top: -5.5em;
-  padding-left: 1.3em;
+  font-weight: bold;
+  margin-top: -4.8em;
+  padding-left: 1em;
 }
 
 .rotating-words {
@@ -279,12 +280,11 @@ h1 {
 
 #portfolio img {
   height: 300px;
-  padding-bottom: 20px;
   width: 300px;
 }
 #portfolio h3 {
   color: #020203;
-  font-family: 'Lora', serif;
+  font-family: "Lora", serif;
   font-size: 24px;
   font-weight: 700;
   margin: 10px auto;
@@ -297,12 +297,29 @@ h1 {
   width: 320px;
 }
 #portfolio a {
-  color: #020203;
+  color: #7f7f7f;
+  font-family: "Source Sans Pro", sans-serif;
   text-decoration: none;
+}
+#portfolio a:hover {
+  color: #020203;
 }
 
 .project-tools {
   padding-top: 10px;
+}
+
+.portfolio-links-container {
+  width: 300px;
+}
+
+.portfolio-links {
+  margin: 5px 0 20px 0;
+  width: 300px;
+}
+
+.second-portfolio-link {
+  float: right;
 }
 
 @media screen and (max-width: 990px) {
@@ -418,7 +435,7 @@ footer ul li {
   padding: 0 15px 0 15px;
 }
 
-img:hover {
+footer img:hover {
   transform: scale(1.1);
 }
 

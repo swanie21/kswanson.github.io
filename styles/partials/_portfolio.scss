@@ -16,13 +16,12 @@
 #portfolio {
   img {
     height: 300px;
-    padding-bottom: 20px;
     width: 300px;
   }
   h3 {
     color: $color-black-lightened;
     font: {
-      family:'Lora', serif;
+      family: $font-lora;
       size: 24px;
       weight: 700;
     }
@@ -36,13 +35,30 @@
     width: 320px;
   }
   a {
-    color: $color-black-lightened;
+    color: $color-gray-dark;
+    font-family: $font-source-sans-pro;
     text-decoration: none;
+    &:hover {
+      color: $color-black-lightened;
+    }
   }
 }
 
 .project-tools {
   padding-top: 10px;
+}
+
+.portfolio-links-container {
+  width: 300px;
+}
+
+.portfolio-links {
+  margin: 5px 0 20px 0;
+  width: 300px;
+}
+
+.second-portfolio-link {
+  float: right;
 }
 
 @media screen and (max-width: $break-point-medium) {
