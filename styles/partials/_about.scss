@@ -64,6 +64,10 @@
     display: block;
     padding: 20px;
   }
+
+  h2.hidden-skills {
+    padding-top: 20px;
+  }
 }
 
 @media screen and (max-width: $break-point-small) {
