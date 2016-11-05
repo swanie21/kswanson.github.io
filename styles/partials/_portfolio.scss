@@ -1,80 +1,80 @@
 #portfolio {
   background-color: $color-off-white;
   display: flex;
-  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
   width: 100%;
-}
-
-.individual-project {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  padding: 60px 30px 60px 30px;
-  width: 350px;
-}
-
-#portfolio {
   img {
-    height: 300px;
-    width: 300px;
-  }
-  h3 {
-    color: $color-black-lightened;
-    font: {
-      family: $font-lora;
-      size: 24px;
-      weight: 700;
-    }
-    margin: 10px auto;
-  }
-  p {
-    color: $color-gray-dark;
-    font-family: $font-source-sans-pro;
-    font-size: 18px;
-    line-height: 30px;
-    width: 320px;
-  }
-  a {
-    color: $color-gray-dark;
-    font-family: $font-source-sans-pro;
-    text-decoration: none;
-    &:hover {
-      color: $color-black-lightened;
-    }
+    height: 280px;
+    width: 280px;
   }
 }
 
-.project-tools {
-  padding-top: 10px;
+#portfolio article {
+  background: lighten($color-blue-dark, 30%);
+  border-radius: 150px;
+  margin: 20px 20px 40px 20px;
+  overflow: hidden;
+  padding: 9px;
+  position: relative;
+  width: 280px;
+  height: 280px;
+  img {
+    border-radius: 140px;
+    left: 9px;
+    position: absolute;
+    top: 9px;
+  }
 }
 
-.portfolio-links-container {
-  width: 300px;
+#portfolio article h1 {
+  color: $color-black-lightened;
+  font-size: 24px;
+  line-height: 25px;
+  padding-left: 0px;
+  position: absolute;
+  text-align: center;
+  top: 210px;
+  width: 280px;
+  z-index: 1;
+  &:hover {
+    display: none;
+  }
 }
 
-.portfolio-links {
-  margin: 5px 0 20px 0;
-  width: 300px;
+.color-image {
+  @include portfolio-transition;
+  opacity: 0;
+  z-index: 1;
+  &:hover {
+    opacity: 1;
+  }
 }
 
-.second-portfolio-link {
-  float: right;
+#portfolio article:hover {
+  background: lighten($color-blue-dark, 30%);
+  border: 1px solid lighten($color-blue-dark, 30%);
 }
 
-@media screen and (max-width: $break-point-medium) {
+@media only screen and (max-width: 680px) {
   #portfolio {
-    flex-wrap: wrap;
-    justify-content: center;
+    img {
+      height: 180px;
+      width: 180px;
+    }
   }
 
-  .individual-project {
-    padding: 20px 0 20px 0;
+  #portfolio article {
+    margin: 10px 10px;
+    width: 180px;
+    height: 180px;
   }
-}
 
-@media screen and (max-width: $break-point-small) {
-  #portfolio p {
-    font-size: 16px;
-    text-align: center;
+  #portfolio article h1 {
+    font-size: 20px;
+    height: 180px;
+    top: 170px;
+    width: 180px;
   }
 }

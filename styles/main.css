@@ -2,7 +2,6 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-@import url("https://fonts.googleapis.com/css?family=Lora|Salsa|Source+Sans+Pro");
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -247,6 +246,7 @@ h1 {
 
 @media screen and (max-width: 990px) {
   h1 {
+    font-size: 2.5em;
     padding-left: 0.8em;
   }
 }
@@ -266,76 +266,81 @@ h1 {
 #portfolio {
   background-color: #fefefe;
   display: flex;
-  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
   width: 100%;
 }
-
-.individual-project {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  padding: 60px 30px 60px 30px;
-  width: 350px;
-}
-
 #portfolio img {
-  height: 300px;
-  width: 300px;
+  height: 280px;
+  width: 280px;
 }
-#portfolio h3 {
+
+#portfolio article {
+  background: #4e8af6;
+  border-radius: 150px;
+  margin: 20px 20px 40px 20px;
+  overflow: hidden;
+  padding: 9px;
+  position: relative;
+  width: 280px;
+  height: 280px;
+}
+#portfolio article img {
+  border-radius: 140px;
+  left: 9px;
+  position: absolute;
+  top: 9px;
+}
+
+#portfolio article h1 {
   color: #020203;
-  font-family: "Lora", serif;
   font-size: 24px;
-  font-weight: 700;
-  margin: 10px auto;
+  line-height: 25px;
+  padding-left: 0px;
+  position: absolute;
+  text-align: center;
+  top: 210px;
+  width: 280px;
+  z-index: 1;
 }
-#portfolio p {
-  color: #7f7f7f;
-  font-family: "Source Sans Pro", sans-serif;
-  font-size: 18px;
-  line-height: 30px;
-  width: 320px;
-}
-#portfolio a {
-  color: #7f7f7f;
-  font-family: "Source Sans Pro", sans-serif;
-  text-decoration: none;
-}
-#portfolio a:hover {
-  color: #020203;
+#portfolio article h1:hover {
+  display: none;
 }
 
-.project-tools {
-  padding-top: 10px;
+.color-image {
+  transition: all 0.2s ease-in;
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  opacity: 0;
+  z-index: 1;
+}
+.color-image:hover {
+  opacity: 1;
 }
 
-.portfolio-links-container {
-  width: 300px;
+#portfolio article:hover {
+  background: #4e8af6;
+  border: 1px solid #4e8af6;
 }
 
-.portfolio-links {
-  margin: 5px 0 20px 0;
-  width: 300px;
-}
-
-.second-portfolio-link {
-  float: right;
-}
-
-@media screen and (max-width: 990px) {
-  #portfolio {
-    flex-wrap: wrap;
-    justify-content: center;
+@media only screen and (max-width: 680px) {
+  #portfolio img {
+    height: 180px;
+    width: 180px;
   }
 
-  .individual-project {
-    padding: 20px 0 20px 0;
+  #portfolio article {
+    margin: 10px 10px;
+    width: 180px;
+    height: 180px;
   }
-}
-@media screen and (max-width: 450px) {
-  #portfolio p {
-    font-size: 16px;
-    text-align: center;
+
+  #portfolio article h1 {
+    font-size: 20px;
+    height: 180px;
+    top: 170px;
+    width: 180px;
   }
 }
 #about {
@@ -400,6 +405,10 @@ h1 {
   .hidden-about-section {
     display: block;
     padding: 20px;
+  }
+
+  h2.hidden-skills {
+    padding-top: 20px;
   }
 }
 @media screen and (max-width: 450px) {
