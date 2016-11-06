@@ -286,6 +286,9 @@ h1 {
   width: 280px;
   height: 280px;
 }
+#portfolio article:hover {
+  background: #4e8af6;
+}
 #portfolio article img {
   border-radius: 140px;
   left: 9px;
@@ -317,11 +320,6 @@ h1 {
 }
 .color-image:hover {
   opacity: 1;
-}
-
-#portfolio article:hover {
-  background: #4e8af6;
-  border: 1px solid #4e8af6;
 }
 
 @media only screen and (max-width: 680px) {
