@@ -186,6 +186,10 @@ nav a:hover {
   padding-top: 1em;
 }
 
+#hidden-contact-information li img:hover {
+  transform: scale(1.1);
+}
+
 @media screen and (max-width: 990px) {
   header {
     height: 48px;

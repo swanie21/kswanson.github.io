@@ -36,6 +36,10 @@ nav a:hover {
   }
 }
 
+#hidden-contact-information li img:hover {
+  transform: scale(1.1);
+}
+
 @media screen and (max-width: $break-point-medium) {
   header {
     height: 48px;
