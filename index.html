@@ -1,181 +1,171 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Kirsten Swanson | Web Developer</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora|Source+Sans+Pro">
-    <link rel="stylesheet" href="styles/main.css" type="text/css">
+    <meta name="viewport" content="width=device-width">
+    <link href="https://fonts.googleapis.com/css?family=Lora|Source+Sans+Pro" rel="stylesheet">
+    <title>Kirsten Swanson</title>
   </head>
-
   <body>
     <header>
       <nav>
+        <a href="#introduction">
+          <img class="logo" src="./img/swan-logo.svg" alt="logo">
+        </a>
         <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#contact" id="connect">Contact</a></li>
+          <li class="website-nav"><a href="#about">About</a></li>
+          <li class="website-nav"><a href="#portfolio-link">Portfolio</a></li>
+          <li class="website-nav"><a href="#contact">Contact</a></li>
         </ul>
+      <div class="overlay" id="phoneNav">
+        <a class="close-nav" href="javascript:void(0)" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+          <ul>
+            <li class="mobile-nav"><a href="#about-link" onclick="closeNav()">About</a></li>
+            <li class="mobile-nav"><a href="#portfolio-link" onclick="closeNav()">Portfolio</a></li>
+            <li class="mobile-nav"><a href="#contact" onclick="closeNav()">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+        <img class="hamburger-menu" src="./img/hamburger-menu.svg" alt="hamburger menu" onclick="openNav()">
       </nav>
     </header>
 
-    <article id="hidden-contact-information">
-      <ul class="contact-icons">
-        <li>
-          <a href="mailto:kswanie21@gmail.com">
-            <img src="img/email.svg" alt="email-envelope" /></a>
-          </li>
-        <li>
-          <a href="https://www.linkedin.com/in/kirsten-swanson-10642671" target="_blank">
-          <img src="img/linkedin.svg" alt="Linkedin icon" /></a>
-        </li>
-        <li>
-          <a href="https://github.com/swanie21" target="_blank">
-          <img src="img/github.svg" alt="Github icon" /></a>
-        </li>
-        <li>
-          <a href="https://twitter.com/kswanie21" target="_blank">
-          <img src="img/twitter.svg" alt="Twitter icon" /></a>
-        </li>
-      </ul>
-    </article>
-
     <section id="introduction">
-      <h1>Who am I?
+      <h1>Who am I...
         <div class="rotating-words">
           <span>Kirsten Swanson</span>
           <span>A Front-End Developer</span>
-          <span>A Creator</span>
-          <span>An Adventurer</span>
         </div>
       </h1>
     </section>
 
+    <article class="container-break"></article>
+
+    <section id="image">
+      <div class="descriptive-nouns">
+        <p class="nouns">Avid Learner, Traveler, Creative Thinker, Outdoor Enthusiast, Adventurer, Foodie, Motorcyclist, Pig Lover and a fun person to hang around.</p>
+        <a class="about-me-link" href="#about-link">More about me &#10139;</a>
+      </div>
+    </section>
+
+    <span id="portfolio-link"></span>
     <section id="portfolio">
       <article>
-        <a href="https://swanie21.github.io/style-guides/" target="_blank">
+        <a href="https://github.com/swanie21/birthday-tracker" target="_blank">
           <span>
-            <h1>Style Guides</h1>
-            <img src="img/style-guide-bw.png" alt="contact card example" />
+            <h3>Birthday Tracker</h3>
+            <img src="./img/birthday-tracker-bw.png" alt="birthday tracker" />
           </span>
           <span>
-            <img src="img/style-guide.png" alt="contact card example" class="color-image" />
+            <img src="./img/birthday-tracker.png" alt="birthday tracker" class="color-image" />
           </span>
         </a>
       </article>
       <article>
-        <a href="https://github.com/swanie21/birthday-tracker" target="_blank">
+        <a href="https://swanie21.github.io/style-guides/" target="_blank">
           <span>
-            <h1>Birthday Tracker</h1>
-            <img src="img/birthday-tracker-bw.png" alt="birthday tracker" />
+            <h3>Style Guides</h3>
+            <img src="./img/style-guide-bw.png" alt="contact card example" />
           </span>
           <span>
-            <img src="img/birthday-tracker.png" alt="birthday tracker" class="color-image" />
+            <img src="./img/style-guide.png" alt="contact card example" class="color-image" />
           </span>
         </a>
       </article>
       <article>
         <a href="https://github.com/07nguyenpaul/weather-forecast" target="_blank">
           <span>
-            <h1>Weather Forecast Application</h1>
-            <img src="img/weather-app-bw.png" alt="weather app" />
+            <h3>Weather Forecast</h3>
+            <img src="./img/weather-app-bw.png" alt="weather app" />
           </span>
           <span>
-            <img src="img/weather-app.png" alt="weather app" class="color-image" />
-          </span>
-        </a>
-      </article>
-      <article>
-        <a href="https://github.com/swanie21/font-pairings" target="_blank">
-          <span>
-            <h1>Font Pairings</h1>
-            <img src="img/font-pairings-bw.png" alt="font pairings" />
-          </span>
-          <span>
-            <img src="img/font-pairings.png" alt="font pairings" class="color-image" />
+            <img src="./img/weather-app.png" alt="weather app" class="color-image" />
           </span>
         </a>
       </article>
       <article>
         <a href="https://swanie21.github.io/game-time-snake/" target="_blank">
           <span>
-            <h1>Snake Game</h1>
-            <img src="img/snake-game-bw.png" alt="snake game" />
+            <h3>Snake Game</h3>
+            <img src="./img/snake-game-bw.png" alt="snake game" />
           </span>
           <span>
-            <img src="img/snake-game.png" alt="snake game" class="color-image" />
-          </span>
-        </a>
-      </article>
-      <article>
-        <a href="https://shoot-the-breeze-99d6f.firebaseapp.com/" target="_blank">
-          <span>
-            <h1>Chat Application</h1>
-            <img src="img/chat-app-bw.png" alt="chat app" />
-          </span>
-          <span>
-            <img src="img/chat-app.png" alt="chat app" class="color-image" />
+            <img src="./img/snake-game.png" alt="snake game" class="color-image" />
           </span>
         </a>
       </article>
     </section>
 
-    </section>
+    <span id="about-link"></span>
     <section id="about">
-      <div class="first-about-section">
+      <div class="intro">
         <h2>Let me introduce myself</h2>
-          <p>Hi, I'm Kirsten! I am an adventurous, risk-taker who seeks a creative challenge. I am constantly an eager learner who loves to tackle any problem. My journey into the ever-changing tech world started with my passion to use my creativity in a versatile yet impactful way. It was actually through my neighbors that programming was introduced to me. They inspired me to pursue this path and to switch careers. My goal is to create memorable and functional user interfaces that are accessible to everyone.
-          </p>
-          <p class="philosophy">My philosophies on life:
-          </p>
-          <p>Enjoy life | Dream big | Create long-lasting relationships <br> Never stop learning | Make mistakes | Travel | Experiment
-          </p>
+        <p>Hi, I'm Kirsten! I'm an adventurous, risk-taker who seeks a creative challenge. I have always been an eager learner who loves to tackle any problem and can quickly assimilate new technologies. My journey into the ever-changing tech world started with my passion to use my creativity in a versatile yet impactful way. Due to my attention-to-detail and organization I'm a stickler for crafting clean code to produce beautifully designed web and mobile applications. My goal is to create practical and memorable user experiences that are accessible to everyone.
+        </p>
       </div>
-      <div class="second-about-section">
-        <h2>Credentials</h2>
-          <p>I'm currently a student at Turing School of Software &amp; Design. This ia a rigorous and fast-paced program to learn the skillset to become a Front-End developer. My undergrad was at the W.P. Carey School of Business at Arizona State University. I graduated early with a B.S. in Marketing and an International Business Certificate. I furthered my education with a TESOL certificate, an ARIES fundamental course, and soon I'll obtain my Front-End Engineering Certificate from Turing School of Software &amp; design.
+      <div class="credentials">
+        <div class="skills">
+          <h2>Technical Skills</h2>
+          <p>
+            HTML <span class.slash>/</span>
+            CSS <span class.slash>/</span>
+            Sass <span class.slash>/</span>
+            UX/UI Design <span class.slash>/</span>
+            Sketch <span class.slash>/</span>
+            Responsive Design <span class.slash>/</span> JavaScript <span class.slash>/</span>
+            jQuery <span class.slash>/</span>
+            React <span class.slash>/</span>
+            React Native <span class.slash>/</span>
+            TDD <span class.slash>/</span>
+            Git/Github <span class.slash>/</span>
+            DevTools <span class.slash>/</span>
+            Webpack Configuration <span class.slash>/</span>
+            InVision <span class.slash>/</span>
+            WAI-ARIA <span class.slash>/</span>  Wire-framing
           </p>
-          <p class="skills">Technical Skills:</p>
-          <p>HTML | CSS | Sass | UX/UI Design | Sketch | Responsive Design <br> JavaScript | jQuery | React | Ember | TDD | Git/Github | DevTools <br> Webpack Configuration | InVision | WAI-ARIA | Wire-framing
-          </p>
-      </div>
-      <div class="hidden-about-section">
-        <h2 class="intro-about-title">Let me introduce myself</h2>
-          <p>Hi, I'm Kirsten! I am an adventurous, risk-taker who seeks a creative challenge. My journey into the ever-changing tech world started with my passion to use my creativity in a versatile yet impactful way. It was actually through my neighbors that programming was introduced to me. They inspired me to pursue this path and to switch careers. My goal is to create memorable and functional user interfaces that are accessible to everyone.
-          </p>
-          <h2 class="hidden-skills">Technical Skills:</h2>
-          <p>HTML | CSS | Sass | UX/UI Design | Sketch | Responsive Design | JavaScript | jQuery | React | Ember | TDD | Git/Github | DevTools | Webpack Configuration | InVision | WAI-ARIA | Wire-framing
-          </p>
+        </div>
+        <div class="education">
+          <h2>Education</h2>
+          <p>B.S. in Marketing at the W.P. Carey School of Business</p>
+          <p>International Business Certificate at the W.P. Carey School of Business</p>
+          <p>Front-End Engineering Certificate from Turing School of Software &amp; Design</p>
+          <p>TESOL Certificate</p>
+        </div>
       </div>
     </section>
 
-    <footer>
+    <footer id="contact">
       <ul>
         <li>
           <a href="mailto:kswanie21@gmail.com">
-            <img src="img/email.svg" alt="email-envelope" /></a>
-          </li>
+            <img class="social-media" src="img/email.svg" alt="email-envelope" />
+          </a>
+        </li>
         <li>
           <a href="https://www.linkedin.com/in/kirsten-swanson-10642671" target="_blank">
-          <img src="img/linkedin.svg" alt="Linkedin icon" /></a>
+            <img class="social-media" src="./img/linkedin-logo.svg" alt="linkedin logo" />
+          </a>
         </li>
         <li>
           <a href="https://github.com/swanie21" target="_blank">
-          <img src="img/github.svg" alt="Github icon" /></a>
+            <img class="social-media" src="img/github.svg" alt="Github icon" />
+          </a>
         </li>
         <li>
-          <a href="https://twitter.com/kswanie21" target="_blank">
-          <img src="img/twitter.svg" alt="Twitter icon" /></a>
+          <a href="https://twitter.com/HelloPana" target="_blank">
+            <img class="social-media" src="./img/twitter-logo.svg" alt="twitter logo" />
+          </a>
         </li>
         <li>
           <a href="https://medium.com/@kswanie21" target="_blank">
-          <img src="img/medium-blog.svg" alt="Medium blog icon" /></a>
+            <img class="social-media" src="img/medium-blog.svg" alt="Medium blog icon" />
+          </a>
         </li>
       </ul>
+      <p class="copyright">Copyright &copy; 2016 Kirsten Swanson</p>
     </footer>
-    <p id="copyright">Copyright &copy; 2016 Kirsten Swanson</p>
 
-    <script src="scripts/jquery.js"></script>
-    <script src="scripts/script.js"></script>
+    <script src="main.bundle.js"></script>
   </body>
 </html>

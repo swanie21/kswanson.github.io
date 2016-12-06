@@ -1,0 +1,112 @@
+header {
+  left: 10%;
+  position: fixed;
+  width: 80%;
+  z-index: 2;
+}
+
+nav {
+  background-color:$black-accent-color;
+  display: flex;
+  height: 70px;
+  ul {
+    align-items: center;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+  }
+}
+
+nav li {
+  list-style: none;
+  margin-right: 32px;
+  position: relative;
+  a {
+    color: $teal-accent-color;
+    font-family: $font-lora;
+    font-size: 20px;
+    text-decoration: none;
+    transition: 0.3s;
+  }
+}
+
+.website-nav a:hover {
+  color: $off-white-color;
+}
+
+.logo {
+  height: 60px;
+  margin-left: 10px;
+  padding-top: 6px;
+}
+
+.hamburger-menu {
+  height: 45px;
+  display: none;
+  padding: 10px 15px 0 0;
+}
+
+.overlay {
+  background-color: rgba(34, 40, 48, 0.9);
+  height: 0%;
+  left: 0;
+  position: fixed;
+  overflow-y: hidden;
+  top: 0;
+  transition: 0.5s;
+  width: 100%;
+  z-index: 1;
+}
+
+.overlay-content {
+  display: flex;
+  position: relative;
+  text-align: center;
+  top: 30%;
+  width: 100%;
+  ul {
+    flex-direction: column;
+    padding-left: 0;
+    li {
+      margin: 20px 0;
+    }
+  }
+}
+
+.close-nav {
+  color: $teal-accent-color;
+  font-size: 50px;
+  position: absolute;
+  right: 19px;
+  text-decoration: none;
+  &:hover {
+    color: $off-white-color;
+  }
+}
+
+.mobile-nav a {
+  color: $teal-accent-color;
+  font-family: $font-lora;
+  font-size: 30px;
+  padding: 10px;
+  &:hover {
+    color: $off-white-color;
+    transition: 0.3s;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  header {
+    left: 0;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .website-nav {
+    display: none;
+  }
+  .hamburger-menu {
+    display: block;
+  }
+}

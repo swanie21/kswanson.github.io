@@ -1,0 +1,65 @@
+#introduction {
+  display: flex;
+  padding-top: 320px;
+  position: relative;
+}
+
+h1 {
+  @include rotating-intro-text;
+  padding-left: 100px;
+}
+
+.rotating-words {
+  @include rotating-intro-text;
+  display: inline-block;
+	text-indent: 6px;
+  vertical-align: top;
+}
+
+.rotating-words span {
+  @include animation-rotation;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+}
+
+.rotating-words  span:nth-child(2) {
+  @include animation-timing-4s;
+}
+
+@media screen and (max-width: 770px) {
+  #introduction {
+    min-height: 50%;
+    padding: 250px 0;
+  }
+  h1 {
+    font-size: 40px;
+    padding-left: 50px;
+  }
+  .rotating-words {
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 415px) {
+  h1 {
+    font-size: 30px;
+    padding-left: 35px;
+  }
+  .rotating-words {
+    display: block;
+    font-size: 30px;
+    margin-top: 50px;
+    text-indent: 0;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  h1 {
+    font-size: 25px;
+    padding-left: 25px;
+  }
+  .rotating-words {
+    font-size: 25px;
+  }
+}

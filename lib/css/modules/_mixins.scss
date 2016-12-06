@@ -1,0 +1,18 @@
+@mixin animation-rotation {
+  animation: topToBottom 8s linear infinite 0s;
+  -ms-animation: topToBottom 8s linear infinite 0s;
+  -webkit-animation: topToBottom 8s linear infinite 0s;
+}
+
+@mixin animation-timing-4s {
+  animation-delay: 4s;
+  -ms-animation-delay: 4s;
+  -webkit-animation-delay: 4s;
+}
+
+@mixin rotating-intro-text {
+  color: $black-accent-color;
+  font-family: $font-lora;
+  font-size: 50px;
+  font-weight: bold;
+}

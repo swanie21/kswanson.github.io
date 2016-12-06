@@ -1,0 +1,78 @@
+#about {
+  background-color: $teal-accent-color;
+  display: flex;
+  flex-direction: row;
+  padding: 50px 0;
+  margin: auto;
+  width: 80%;
+}
+
+#about-link:before {
+ content: "";
+ display: block;
+ height: 70px;
+ margin-top: -70px;
+ visibility: hidden;
+}
+
+.credentials {
+  width: 55%;
+}
+
+.intro {
+  border-right: 1px solid $off-white-color;
+  padding: 0 15px 0 25px;
+  width: 44%;
+}
+
+.skills {
+  border-bottom: 1px solid $off-white-color;
+  margin: 0 12px;
+  padding: 0 20px 10px 20px;
+}
+
+.education {
+  margin: 20px 12px 0 12px;
+  padding: 0 20px 10px 20px;
+}
+
+h2 {
+  color: $black-accent-color;
+  font-family: $font-lora;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+p {
+  color: $black-accent-color;
+  font-family: $font-source-sans-pro;
+  line-height: 36px;
+}
+
+@media screen and (max-width: 770px) {
+  #about {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #about {
+    flex-direction: column;
+  }
+  .intro, .credentials {
+    width: 100%;
+  }
+  .intro {
+    border: none;
+    border-bottom: 1px solid $off-white-color;
+    margin: 0 auto;
+    padding-bottom: 10px;
+    width: 95%;
+  }
+  .skills {
+    padding-top: 20px;
+  }
+  h2 {
+    font-size: 26px;
+  }
+}
