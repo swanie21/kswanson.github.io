@@ -1,0 +1,53 @@
+.contact-form {
+  margin: 20px 12px 0 12px;
+  padding: 0 20px 10px 20px;
+}
+
+input {
+  @include input-format;
+  display: inline-block;
+  margin-top: 15px;
+  width: 215px;
+}
+
+textarea {
+  @include input-format;
+  margin-top: 10px;
+  resize: none;
+  width: 88%;
+}
+
+.form-name {
+  margin-right: 5px;
+}
+
+.submit-form-button {
+  background: darken($gray-accent-color, 10%);
+  border: none;
+  border-radius: 3px;
+  box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.50);
+  color: $off-white-color;
+  margin: 40px 0 0 10px;
+  outline: none;
+  position: absolute;
+  transition: 0.5s;
+  width: 50px;
+  &:hover {
+    background: darken($teal-accent-color, 10%);
+    cursor: pointer;
+    transition: 0.5s;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  input, textarea {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .submit-form-button {
+    display: block;
+    margin: 10px 0 0 0;
+  }
+}

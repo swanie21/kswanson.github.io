@@ -21,13 +21,24 @@ footer ul {
   height: 50px;
   width: 50px;
   margin: 0 7px;
-  &:hover {
-    transform: scale(1.2);
-  }
+}
+
+.switch-icon .teal-icon {
+  display: none;
+}
+
+.switch-icon:hover .social-media,
+.switch-icon:active .social-media {
+  display: none;
+}
+
+.switch-icon:hover .teal-icon {
+  display: block;
+  margin: 0 7px;
 }
 
 .copyright {
-  color: lighten($gray-accent-color, 40%);
+  color: $gray-accent-color;
   font-family: $font-source-sans-pro;
   font-size: 14px;
   margin-top: 10px;
