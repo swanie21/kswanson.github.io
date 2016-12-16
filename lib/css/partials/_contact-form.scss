@@ -32,6 +32,7 @@ textarea {
   margin: 40px 0 0 10px;
   outline: none;
   position: absolute;
+  text-align: center;
   transition: 0.5s;
   width: 50px;
   &:hover {
@@ -51,5 +52,6 @@ textarea {
   .submit-form-button {
     display: block;
     margin: 10px 0 0 0;
+    padding: 6px 0;
   }
 }
