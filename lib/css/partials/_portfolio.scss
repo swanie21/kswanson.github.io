@@ -53,10 +53,11 @@
 
 .color-image {
   opacity: 0.1;
+  transition: 0.8s;
   z-index: 1;
   &:hover {
     opacity: 1;
-    transition: 0.5s;
+    transition: 0.8s;
   }
 }
 
