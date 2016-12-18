@@ -9,8 +9,7 @@ body, html {
 }
 
 #introduction, #image {
-  background-attachment: fixed;
-  background-color: #FFF;
+  background: #FFF;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -21,12 +20,10 @@ body, html {
 }
 
 .self-portrait {
-  height: 600px;
-  opacity: 0.5;
-  position: absolute;
-  right: 30px;
-  top: 99px;
-  width: 450px;
+  background: url('./img/self-portrait.png') no-repeat fixed;
+  background-position: 260px;
+  background-size: contain;
+  width: 100%;
 }
 
 #image {
@@ -46,14 +43,13 @@ body, html {
     width: 100%;
   }
   .self-portrait {
-    height: 400px;
-    top: 140px;
-    width: 300px;
+    background-position: 0px;
   }
 }
 
 @media screen and (max-width: 420px) {
   .self-portrait {
-    display: none;
+    background-position: -300px;
+    background-size: auto;
   }
 }
