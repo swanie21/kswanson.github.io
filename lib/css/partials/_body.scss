@@ -49,7 +49,7 @@ body, html {
 
 @media screen and (max-width: 420px) {
   .self-portrait {
-    background-position: -300px;
-    background-size: auto;
+    background: url('./img/small-self-portrait.png') no-repeat fixed;
+    background-size: cover;
   }
 }
