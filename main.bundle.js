@@ -67,8 +67,6 @@
 	  document.getElementById('phoneNav').style.height = '0%';
 	});
 
-	(0, _jquery2.default)();
-
 /***/ },
 /* 1 */
 /***/ function(module, exports, __webpack_require__) {
