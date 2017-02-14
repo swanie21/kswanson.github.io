@@ -38,18 +38,24 @@ body, html {
   width: 80%;
 }
 
+@media screen and (max-width: 1030px) {
+  .self-portrait {
+    background-attachment: scroll;
+  }
+}
+
 @media screen and (max-width: 770px) {
   #introduction, #image, .container-break {
     width: 100%;
   }
   .self-portrait {
-    background-position: 0px;
+    background-position: bottom;
   }
 }
 
 @media screen and (max-width: 420px) {
   .self-portrait {
-    background: url('./img/small-self-portrait.png') no-repeat fixed;
+    background: url('./img/small-self-portrait.png') no-repeat;
     background-size: cover;
   }
 }
