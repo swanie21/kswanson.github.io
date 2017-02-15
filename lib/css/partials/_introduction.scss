@@ -3,6 +3,13 @@
   position: relative;
 }
 
+#introduction-link:before {
+ display: block;
+ height: 70px;
+ margin-top: -70px;
+ visibility: hidden;
+}
+
 h1 {
   @include rotating-intro-text;
   padding: 330px 0 0 100px;
