@@ -76,6 +76,9 @@
     height: 384px;
     width: 384px;
   }
+  h3 {
+    top: 40%;
+  }
 }
 
 @media screen and (max-width: 415px) {
@@ -84,8 +87,5 @@
   }
   #portfolio img {
     width: 100%;
-  }
-  h3 {
-    top: 40%;
   }
 }
