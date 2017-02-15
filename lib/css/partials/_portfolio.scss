@@ -69,21 +69,23 @@
 
 @media screen and (max-width: 770px) {
   #portfolio img {
-    height: 300px;
-    width: 300px;
+    height: 384px;
+    width: 384px;
   }
   #portfolio article {
-    height: 300px;
-    width: 300px;
-    margin: 10px 0;
-  }
-  #portfolio article:last-child {
-    margin-bottom: 50px;
+    height: 384px;
+    width: 384px;
   }
 }
 
 @media screen and (max-width: 415px) {
-  #portfolio article:first-child {
-    margin-top: 50px;
+  #portfolio article {
+    width: 100%;
+  }
+  #portfolio img {
+    width: 100%;
+  }
+  h3 {
+    top: 40%;
   }
 }

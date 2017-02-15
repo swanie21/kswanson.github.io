@@ -3,13 +3,6 @@
   position: relative;
 }
 
-#introduction-link:before {
- display: block;
- height: 70px;
- margin-top: -70px;
- visibility: hidden;
-}
-
 h1 {
   @include rotating-intro-text;
   padding: 330px 0 0 100px;
@@ -35,33 +28,25 @@ h1 {
 
 @media screen and (max-width: 770px) {
   h1 {
-    font-size: 40px;
-    padding: 200px 0 0 50px;
+    font-size: 70px;
+    padding-left: 0;
+    text-align: center;
   }
   .rotating-words {
-    font-size: 40px;
+    display: none;
   }
 }
 
 @media screen and (max-width: 415px) {
   h1 {
-    font-size: 28px;
+    font-size: 40px;
     padding-top: 500px;
-  }
-  .rotating-words {
-    display: block;
-    font-size: 28px;
-    margin-top: 25px;
-    text-indent: 0;
   }
 }
 
 @media screen and (max-width: 360px) {
   h1 {
-    font-size: 22px;
-    padding: 390px 0 0 30px;
-  }
-  .rotating-words {
-    font-size: 22px;
+    font-size: 30px;
+    padding-top: 450px;
   }
 }
