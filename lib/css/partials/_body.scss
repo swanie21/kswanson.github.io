@@ -28,6 +28,7 @@ body, html {
 
 #image {
   background: url('./img/flower.jpg') no-repeat;
+  background-position: center;
   background-size: cover;
 }
 
@@ -39,16 +40,11 @@ body, html {
 }
 
 @media screen and (max-width: 1030px) {
-  .self-portrait {
-    background-attachment: scroll;
-  }
-}
-
-@media screen and (max-width: 770px) {
   #introduction, #image, .container-break {
     width: 100%;
   }
   .self-portrait {
+    background-attachment: scroll;
     background-position: bottom;
   }
 }
@@ -56,6 +52,6 @@ body, html {
 @media screen and (max-width: 420px) {
   .self-portrait {
     background: url('./img/small-self-portrait.png') no-repeat;
-    background-size: cover;
+    background-position: bottom;
   }
 }
