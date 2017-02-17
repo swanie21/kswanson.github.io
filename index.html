@@ -11,21 +11,21 @@
   <body>
     <header>
       <nav>
-        <a href="#introduction">
+        <a class="page-scroll" href="#introduction">
           <img class="logo" src="./img/swan-logo.svg" alt="logo">
         </a>
         <ul>
-          <li class="website-nav"><a href="#about">About</a></li>
-          <li class="website-nav"><a href="#portfolio-link">Portfolio</a></li>
-          <li class="website-nav"><a href="#contact">Contact</a></li>
+          <li class="website-nav"><a class="page-scroll" href="#about">About</a></li>
+          <li class="website-nav"><a class="page-scroll" href="#portfolio">Portfolio</a></li>
+          <li class="website-nav"><a class="page-scroll" href="#contact">Contact</a></li>
         </ul>
       <div class="overlay" id="phoneNav">
         <a class="close-nav" href="javascript:void(0)">&times;</a>
         <div class="overlay-content">
           <ul>
-            <li class="mobile-nav"><a href="#about-link">About</a></li>
-            <li class="mobile-nav"><a href="#portfolio-link">Portfolio</a></li>
-            <li class="mobile-nav"><a href="#contact">Contact</a></li>
+            <li class="mobile-nav"><a class="page-scroll" href="#about">About</a></li>
+            <li class="mobile-nav"><a class="page-scroll" href="#portfolio">Portfolio</a></li>
+            <li class="mobile-nav"><a class="page-scroll" href="#contact">Contact</a></li>
           </ul>
         </div>
       </div>
@@ -49,59 +49,75 @@
     <section id="image">
       <div class="descriptive-nouns">
         <p class="nouns">Avid Learner, Traveler, Creative Thinker, Outdoor Enthusiast, Adventurer, Foodie, Motorcyclist, Pig Lover and Optimist.</p>
-        <a class="about-me-link" href="#about-link">More about me &#10139;</a>
+        <a class="about-me-link page-scroll" href="#about">More about me &#10139;</a>
       </div>
     </section>
 
-    <span id="portfolio-link"></span>
     <section id="portfolio">
-      <article>
-        <a href="https://github.com/swanie21/birthday-tracker" target="_blank">
+      <article class="popup-gallery">
+        <a href="./img/projects/birthday-sketch.png" class="portfolio-box">
           <span>
-            <h3>Birthday Tracker</h3>
-            <img src="./img/birthday-tracker-bw.png" alt="birthday tracker" />
+            <h3>Design</h3>
+            <img src="./img/design-bw.png" alt="laptop" class="img-responsive" />
           </span>
           <span>
-            <img src="./img/birthday-tracker.png" alt="birthday tracker" class="color-image" />
+            <img src="./img/design.png" alt="laptop" class="color-image" />
           </span>
         </a>
+        <a href="./img/projects/birthday-invision.png" class="portfolio-box"></a>
+        <a href="./img/projects/birthday-app.png" class="portfolio-box"></a>
+        <a href="./img/projects/sketch.png" class="portfolio-box"></a>
+        <a href="./img/projects/parallax-example.gif" class="portfolio-box"></a>
+        <a href="./img/projects/style-guides.png" class="portfolio-box"></a>
+        <a href="./img/projects/font-pairings.png" class="portfolio-box"></a>
+        <a href="./img/projects/overlay-menu.png" class="portfolio-box"></a>
+        <a href="./img/projects/animated-images.gif" class="portfolio-box"></a>
+        <a href="./img/projects/button-animations.gif" class="portfolio-box"></a>
       </article>
-      <article>
-        <a href="https://github.com/swanie21/change-of-scenery" target="_blank">
+      <article class="popup-gallery2">
+        <a href="./img/projects/weather-app.png" class="portfolio-box">
           <span>
-            <h3>Change of Scenery</h3>
+            <h3>React</h3>
+            <img src="./img/weather-app-bw.png" alt="weather app" class="img-responsive" />
+          </span>
+          <span>
+            <img src="./img/weather-app.png" alt="weather app" class="color-image" />
+          </span>
+        </a>
+        <a href="./img/projects/chat-app.png" class="portfolio-box"></a>
+        <a href="./img/projects/quiz.png" class="portfolio-box"></a>
+        <a href="./img/projects/turing-fridays-app.png" class="portfolio-box"></a>
+      </article>
+      <article class="popup-gallery3">
+        <a href="./img/projects/birthday-app.png" class="portfolio-box">
+          <span>
+            <h3>React Native</h3>
+            <img src="./img/birthday-tracker-bw.png" alt="birthday tracker app" class="img-responsive" />
+          </span>
+          <span>
+            <img src="./img/birthday-tracker.png" alt="birthday tracker app" class="color-image" />
+          </span>
+        </a>
+        <a href="./img/projects/rank-photographers-app.png" class="portfolio-box"></a>
+      </article>
+      <article class="popup-gallery4">
+        <a href="./img/projects/electron-app.png" class="portfolio-box">
+          <span>
+            <h3>Other Projects</h3>
             <img src="./img/background-setter-bw.png" alt="electron app" />
           </span>
           <span>
             <img src="./img/background-setter.png" alt="electron app" class="color-image" />
           </span>
         </a>
-      </article>
-      <article>
-        <a href="https://github.com/07nguyenpaul/weather-forecast" target="_blank">
-          <span>
-            <h3>Weather Forecast</h3>
-            <img src="./img/weather-app-bw.png" alt="weather app" />
-          </span>
-          <span>
-            <img src="./img/weather-app.png" alt="weather app" class="color-image" />
-          </span>
-        </a>
-      </article>
-      <article>
-        <a href="https://swanie21.github.io/game-time-snake/" target="_blank">
-          <span>
-            <h3>Snake Game</h3>
-            <img src="./img/snake-game-bw.png" alt="snake game" />
-          </span>
-          <span>
-            <img src="./img/snake-game.png" alt="snake game" class="color-image" />
-          </span>
-        </a>
+        <a href="./img/projects/snake-game.png" class="portfolio-box"></a>
+        <a href="./img/projects/pomodoro-app.png" class="portfolio-box"></a>
+        <a href="./img/projects/voting-app.png" class="portfolio-box"></a>
+        <a href="./img/projects/jquery-chatroom.png" class="portfolio-box"></a>
+        <a href="./img/projects/url-shortener-app.png" class="portfolio-box"></a>
       </article>
     </section>
 
-    <span id="about-link"></span>
     <section id="about">
       <div class="intro">
         <h2>Let me introduce myself</h2>
