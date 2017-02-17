@@ -7,24 +7,16 @@
   margin: auto;
   width: 80%;
   img {
-    height: 253px;
-    width: 253px;
+    height: 256px;
+    width: 256px;
   }
-}
-
-#portfolio-link:before {
- content: "";
- display: block;
- height: 70px;
- margin-top: -70px;
- visibility: hidden;
 }
 
 #portfolio article {
   overflow: hidden;
   position: relative;
-  height: 253px;
-  width: 253px;
+  height: 256px;
+  width: 256px;
   img {
     position: absolute;
   }

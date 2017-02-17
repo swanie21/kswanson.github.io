@@ -17,6 +17,8 @@
     "chai": "^3.5.0",
     "css-loader": "^0.26.0",
     "jquery": "^3.1.1",
+    "jquery-easing": "0.0.1",
+    "magnific-popup": "^1.1.0",
     "mocha": "^3.1.2",
     "mocha-loader": "^1.0.0",
     "node-sass": "^3.13.0",
