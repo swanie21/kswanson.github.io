@@ -37,6 +37,12 @@ h1 {
   }
 }
 
+@media screen and (max-width: 570px) {
+  h1 {
+    font-size: 30px;
+  }
+}
+
 @media screen and (max-width: 415px) {
   h1 {
     font-size: 40px;
