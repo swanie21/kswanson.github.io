@@ -26,7 +26,7 @@ textarea {
 }
 
 .submit-form-button {
-  background: darken($gray-accent-color, 10%);
+  background: darken($gray-accent-color, 23%);
   border: none;
   border-radius: 3px;
   box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.50);
@@ -41,7 +41,7 @@ textarea {
   transition: 0.5s;
   width: 50px;
   &:hover {
-    background: darken($teal-accent-color, 10%);
+    background: $gray-accent-color;
     cursor: pointer;
   }
 }
