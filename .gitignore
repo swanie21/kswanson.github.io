@@ -44,3 +44,7 @@ jspm_packages
 errorShots
 
 CNAME
+
+.DS_Store
+
+*.bundle.js
