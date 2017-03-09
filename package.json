@@ -18,6 +18,8 @@
     "css-loader": "^0.26.0",
     "jquery": "^3.1.1",
     "jquery-easing": "0.0.1",
+    "jshint": "^2.9.4",
+    "jshint-loader": "^0.8.4",
     "magnific-popup": "^1.1.0",
     "mocha": "^3.1.2",
     "mocha-loader": "^1.0.0",
