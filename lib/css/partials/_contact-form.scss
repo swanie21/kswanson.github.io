@@ -9,7 +9,7 @@ input {
   background-image: -moz-linear-gradient(0% 12% 90deg, #fff, #999);
   display: inline-block;
   margin-top: 15px;
-  width: 215px;
+  width: 213px;
 }
 
 textarea {
@@ -45,6 +45,12 @@ textarea {
     cursor: pointer;
   }
 }
+
+@media screen and (max-width: 1149px) {
+  input {
+    width: 88%;
+  }
+}  
 
 @media screen and (max-width: 1000px) {
   input, textarea {
