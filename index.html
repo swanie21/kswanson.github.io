@@ -8,7 +8,7 @@
     <title>Kirsten Swanson</title>
   </head>
   <body>
-    <header>
+    <header role="navigation">
       <nav>
         <a class="page-scroll" href="#introduction">
           <img class="logo" src="./img/swan-logo.svg" alt="logo">
@@ -18,7 +18,7 @@
           <li class="website-nav"><a class="page-scroll" href="#portfolio">Portfolio</a></li>
           <li class="website-nav"><a class="page-scroll" href="#contact">Contact</a></li>
         </ul>
-      <div class="overlay" id="phoneNav">
+      <div class="overlay" id="phoneNav" role="navigation">
         <a class="close-nav" href="javascript:void(0)">&times;</a>
         <div class="overlay-content">
           <ul>
@@ -28,11 +28,13 @@
           </ul>
         </div>
       </div>
-        <img class="hamburger-menu" src="./img/hamburger-menu.svg" alt="hamburger menu">
+      <div role="button" tabindex="0" aria-label="menu">
+        <img class="hamburger-menu" src="./img/hamburger-menu.svg" alt="hamburger menu" />
+      </div>
       </nav>
     </header>
 
-    <section id="introduction">
+    <section id="introduction" role="complementary">
       <article class="self-portrait">
         <h1>Who am I...
           <div class="rotating-words">
@@ -45,14 +47,14 @@
 
     <article class="container-break"></article>
 
-    <section id="image">
+    <section id="image" role="complementary">
       <div class="descriptive-nouns">
         <p class="nouns">Avid Learner, Traveler, Creative Thinker, Outdoor Enthusiast, Adventurer, Foodie, Motorcyclist, Pig Lover and Optimist.</p>
         <a class="about-me-link page-scroll" href="#about">More about me &#10139;</a>
       </div>
     </section>
 
-    <section id="portfolio">
+    <section id="portfolio" role="complementary">
       <article class="popup-gallery">
         <a href="./img/projects/birthday-sketch.png" class="portfolio-box">
           <span>
@@ -117,7 +119,7 @@
       </article>
     </section>
 
-    <section id="about">
+    <section id="about" role="main">
       <div class="intro">
         <h2>Let me introduce myself</h2>
         <p>Hi, I'm Kirsten! I'm an adventurous, risk-taker who seeks a creative challenge. I have always been an eager learner who loves to tackle any problem and can quickly assimilate new technologies. My journey into the ever-changing tech world started with my passion to use my creativity in a versatile yet impactful way. Due to my attention-to-detail and organization I'm a stickler for crafting clean code to produce beautifully designed web and mobile applications. My goal is to create practical and memorable user experiences that are accessible to everyone.
@@ -145,7 +147,7 @@
             Wireframing
           </p>
         </div>
-        <div class="contact-form">
+        <div class="contact-form" role="form">
           <h2>Contact Me</h2>
           <form action="https://formspree.io/kswanie21@gmail.com" method="POST">
             <label for="name" aria-label="name" title="name">
@@ -163,7 +165,7 @@
       </div>
     </section>
 
-    <footer id="contact">
+    <footer id="contact" role="contentinfo">
       <ul>
         <li>
           <a href="https://www.linkedin.com/in/kirsten-swanson-10642671" target="_blank" class="switch-icon">
