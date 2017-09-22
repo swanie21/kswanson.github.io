@@ -23,16 +23,16 @@ h1 {
 }
 
 .flying-words span:nth-child(2) {
-  animation: 3s rightFadeIn 1s ease-in-out;
+  animation: 3s rightFadeIn 1.5s ease-in-out;
   color: $grey-light;
   font-size: 40px;
   position: absolute;
-  right: 12%;
-  top: 12%;
+  right: 10%;
+  top: 15%;
 }
 
 .flying-words span:nth-child(3) {
-  animation: 4s bottomFadeIn 2.5s ease-in-out;
+  animation: 4s bottomFadeIn 3s ease-in-out;
   color: $grey-light;
   font-size: 65px;
   bottom: 25%;
@@ -41,10 +41,10 @@ h1 {
 }
 
 .flying-words span:nth-child(4) {
-  animation: 4s bottomVerticalFadeIn 4.5s ease-in-out;
+  animation: 4s bottomVerticalFadeIn 5s ease-in-out;
   font-size: 40px;
   position: absolute;
-  right: -10%;
+  right: -3%;
   bottom: 0;
   transform: rotate(-90deg);
   white-space: nowrap;
