@@ -9,7 +9,7 @@ input {
   background-image: -moz-linear-gradient(0% 12% 90deg, #fff, #999);
   display: inline-block;
   margin-top: 15px;
-  width: 213px;
+  width: 43.5%;
 }
 
 textarea {
@@ -26,11 +26,11 @@ textarea {
 }
 
 .submit-form-button {
-  background: darken($gray-accent-color, 23%);
+  background: darken($gray-accent, 23%);
   border: none;
   border-radius: 3px;
   box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.50);
-  color: $off-white-color;
+  color: $off-white;
   font-family: $font-source-sans-pro;
   font-size: 16px;
   height: 100px;
@@ -41,7 +41,7 @@ textarea {
   transition: 0.5s;
   width: 50px;
   &:hover {
-    background: $gray-accent-color;
+    background: $gray-accent;
     cursor: pointer;
   }
 }

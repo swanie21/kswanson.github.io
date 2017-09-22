@@ -1,0 +1,66 @@
+@keyframes topFadeIn {
+  0% {
+    top: 0;
+    opacity: 0;
+    top: 0;
+  }
+  75% {
+    top: 40%;
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes rightFadeIn {
+  0% {
+    opacity: 0;
+    right: 0;
+  }
+  75% {
+    color: $black-accent;
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes bottomFadeIn {
+  0% {
+    bottom: 0;
+    opacity: 0;
+  }
+  75% {
+    bottom: 25%;
+    color: $black-accent;
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes bottomVerticalFadeIn {
+  0% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 1;
+    bottom: 30%; 
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes centerFadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+  

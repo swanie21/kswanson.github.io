@@ -1,29 +1,16 @@
-@mixin animation-rotation {
-  animation: topToBottom 8s linear infinite 0s;
-  -ms-animation: topToBottom 8s linear infinite 0s;
-  -webkit-animation: topToBottom 8s linear infinite 0s;
-}
-
-@mixin animation-timing-4s {
-  animation-delay: 4s;
-  -ms-animation-delay: 4s;
-  -webkit-animation-delay: 4s;
-}
-
-@mixin rotating-intro-text {
-  color: $black-accent-color;
+@mixin flying-intro-text {
+  color: $black-accent;
   font-family: $font-lora;
-  font-size: 50px;
   font-weight: bold;
 }
 
 @mixin input-format {
-  background: $off-white-color;
+  background: $off-white;
   border: none;
   border-radius: 5px;
-  color: $black-accent-color;
+  color: $black-accent;
   font-family: $font-source-sans-pro;
   font-size: 16px;
-  outline-color: darken($gray-accent-color, 10%);
+  outline-color: darken($gray-accent, 10%);
   padding: 10px;
 }

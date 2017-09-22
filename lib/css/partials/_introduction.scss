@@ -4,55 +4,86 @@
 }
 
 h1 {
-  @include rotating-intro-text;
-  padding: 330px 0 0 100px;
+  @include flying-intro-text;
+  font-size: 50px;
+  display: none;
 }
 
-.rotating-words {
-  @include rotating-intro-text;
-  display: inline-block;
-	text-indent: 6px;
-  vertical-align: top;
+.flying-words span {
+  @include flying-intro-text;
+  opacity: 0;
 }
 
-.rotating-words span {
-  @include animation-rotation;
-	opacity: 0;
-	overflow: hidden;
-	position: absolute;
+.flying-words span:nth-child(1) {
+  animation: 3s topFadeIn ease-out;
+  font-size: 50px;
+  left: 10%;
+  position: absolute;
+  top: 250px;
 }
 
-.rotating-words  span:nth-child(2) {
-  @include animation-timing-4s;
+.flying-words span:nth-child(2) {
+  animation: 3s rightFadeIn 1s ease-in-out;
+  color: $grey-light;
+  font-size: 40px;
+  position: absolute;
+  right: 12%;
+  top: 12%;
+}
+
+.flying-words span:nth-child(3) {
+  animation: 4s bottomFadeIn 2.5s ease-in-out;
+  color: $grey-light;
+  font-size: 65px;
+  bottom: 25%;
+  left: 5%;
+  position: absolute;
+}
+
+.flying-words span:nth-child(4) {
+  animation: 4s bottomVerticalFadeIn 4.5s ease-in-out;
+  font-size: 40px;
+  position: absolute;
+  right: -10%;
+  bottom: 0;
+  transform: rotate(-90deg);
+  white-space: nowrap;
+}
+
+.flying-words span:nth-child(5) {
+  animation: 3s centerFadeIn 7.5s forwards;
+  font-size: 50px;
+  left: 8%;
+  position: absolute;
+  top: 50%;
 }
 
 @media screen and (max-width: 770px) {
-  h1 {
-    font-size: 70px;
-    padding: 250px 0 0 0;
-    text-align: center;
-  }
-  .rotating-words {
+  .flying-words {
     display: none;
+  }
+  h1 {
+    font-size: 40px;
+    display: block;
+    left: 25%;
+    position: absolute;
+    top: 30%;
   }
 }
 
 @media screen and (max-width: 570px) {
   h1 {
-    font-size: 30px;
+    font-size: 40px;
+    display: block;
+    left: 10%;
+    top: 40%;
   }
 }
 
 @media screen and (max-width: 415px) {
   h1 {
-    font-size: 40px;
-    padding-top: 400px;
+    font-size: 28px;
+    padding-top: 60%;
   }
 }
 
-@media screen and (max-width: 360px) {
-  h1 {
-    font-size: 30px;
-    padding-top: 450px;
-  }
-}

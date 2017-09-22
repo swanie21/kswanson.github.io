@@ -6,7 +6,7 @@ header {
 }
 
 nav {
-  background-color: $black-accent-color;
+  background-color: $black-accent;
   display: flex;
   height: 70px;
   ul {
@@ -22,7 +22,7 @@ nav li {
   margin-right: 32px;
   position: relative;
   a {
-    color: $teal-accent-color;
+    color: $teal-accent;
     font-family: $font-lora;
     font-size: 20px;
     text-decoration: none;
@@ -31,7 +31,7 @@ nav li {
 }
 
 .website-nav a:hover {
-  color: $off-white-color;
+  color: $off-white;
 }
 
 .logo {
@@ -74,23 +74,23 @@ nav li {
 }
 
 .close-nav {
-  color: $teal-accent-color;
+  color: $teal-accent;
   font-size: 50px;
   position: absolute;
   right: 19px;
   text-decoration: none;
   &:hover {
-    color: $off-white-color;
+    color: $off-white;
   }
 }
 
 .mobile-nav a {
-  color: $teal-accent-color;
+  color: $teal-accent;
   font-family: $font-lora;
   font-size: 30px;
   padding: 10px;
   &:hover {
-    color: $off-white-color;
+    color: $off-white;
     transition: 0.3s;
   }
 }
