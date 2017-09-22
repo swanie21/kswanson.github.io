@@ -46,6 +46,12 @@ nav li {
   padding: 10px 15px 0 0;
 }
 
+.close-menu {
+  height: 45px;
+  display: none;
+  padding: 10px 5px 0 0;
+}
+
 .overlay {
   background-color: rgba(34, 40, 48, 0.9);
   height: 0%;
@@ -107,6 +113,9 @@ nav li {
     display: none;
   }
   .hamburger-menu {
+    display: block;
+  }
+  .close-menu {
     display: block;
   }
 }
